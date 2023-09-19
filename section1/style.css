@@ -1,0 +1,82 @@
+body {
+  color: #222;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #222;
+}
+
+/* Grid Practice */
+
+.parent {
+  border: 5px solid #000;
+  /* height: 500px; */
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+  /* grid-template-columns: auto auto;
+  grid-template-rows: 1fr 100px 1fr; */
+}
+.parent div {
+  background: yellowgreen;
+  border: 1px solid #000;
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.parent-justify-items {
+  border: 5px solid #000;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-items: center;
+}
+.parent-justify-items div {
+  background: darkkhaki;
+  font-size: 30px;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  color: #fff;
+}
+
+.parent-align-items {
+  border: 5px solid #000;
+  display: grid;
+  height: 300px;
+  grid-template-columns: auto auto;
+  justify-items: center;
+  align-items: center;
+}
+.parent-align-items div {
+  background: darkkhaki;
+  font-size: 30px;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  color: #fff;
+}
+
+.parent-content {
+  border: 5px solid #000;
+  background: deepskyblue;
+  height: 400px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  align-content: center;
+}
+.parent-content div {
+  text-align: center;
+  color: #fff;
+  background-color: gold;
+  width: 100px;
+  height: 50px;
+  padding: 20px;
+  border: 1px solid red;  
+  margin: 5px;
+}
