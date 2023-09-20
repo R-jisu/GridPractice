@@ -1,0 +1,227 @@
+body {
+  color: #222;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #222;
+}
+
+/* Grid practice */
+.parent {
+  border: 5px solid #000;
+  background-color: khaki;
+  height: 300px;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-items: center;
+  align-items: center;
+}
+.parent div {
+  background-color: hotpink;
+  text-align: center;
+  color: #fff;
+  font-size: 30px;  
+  /* width: 100px;
+  height: 100px; */
+}
+.parent div:nth-child(2) {
+  justify-self: stretch;
+  align-self: stretch;
+}
+
+.parent-grid-column {
+  border: 5px solid #000;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+}
+.parent-grid-column div {
+  font-size: 30px;
+  background-color: deepskyblue;
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+}
+.item {
+  background-color: crimson !important; 
+  /* grid-column-start: 1; */
+  /* grid-column-end: 3; */
+  /* grid-column: 1 / 3 ; */
+  grid-column: 1 / span 2;
+}
+
+.parent-grid-row {
+  border: 5px solid #000;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+}
+.parent-grid-row div {
+  font-size: 30px;
+  background-color: deepskyblue;
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+}
+.item2 {
+  background-color: crimson !important; 
+  /* grid-row: 1 / 5; */
+  grid-row: 1 / span 4;
+  grid-column-start: 2;
+}
+
+.parent-grid-row-column {
+  border: 5px solid #000;
+  background-color: khaki;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+}
+.parent-grid-row-column div {
+  font-size: 30px;
+  border: 1px solid red;
+  text-align: center;
+}
+.focus {
+  background-color: royalblue;
+  /* grid-column: 1 / 3;
+  grid-row: 1 / 3; */
+  /* grid-column: 1 / span 2;
+  grid-row: 1 / span 2; */
+
+  /* grid-column: 2 / span 2;
+  grid-row:  2 / span 2 ; */
+
+  grid-column: 1 / span 2;
+  grid-row: 3 / span 2;
+}
+
+.parent-grid-row-column2 {
+  background-color: khaki;
+  border: 5px solid #000;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(3, auto);
+}
+.parent-grid-row-column2 div {
+  font-size: 30px;
+  text-align: center;
+  border: 1px solid #000;
+  padding: 30px;
+}
+.parent-grid-row-column2 div:nth-child(1) {
+  background-color: red;
+  grid-column: 1 / span 2;  
+  grid-row: 1;
+}
+.parent-grid-row-column2 div:nth-child(2) {
+  background-color:lightgreen;
+  grid-row: 1 / span 2;
+}
+.parent-grid-row-column2 div:nth-child(3) {
+  background-color: skyblue; 
+}
+.parent-grid-row-column2 div:nth-child(4) {
+  background-color: skyblue;
+}
+.parent-grid-row-column2 div:nth-child(5) {
+  background-color: pink;
+  grid-column: 1 / span 3;
+}
+
+.parent-grid-area {
+  border: 5px solid #000;
+  background-color: khaki;
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  grid-gap: 10px;
+}
+.parent-grid-area div {
+  font-size: 30px;
+  border: 1px solid #000;
+  padding: 15px;
+  text-align: center;
+}
+.grid-area-focus {
+  background-color: crimson;
+  /* grid-area: 1 / 2 / span 4 / span 4; */
+  grid-area: 2 / 1 / span 2 / span 3;
+}
+
+.parent-z-index {
+  border: 5px solid #000;
+  width: 600px;
+  width: 300px;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  background-color: khaki;
+}
+.parent-z-index div {
+  border: 1px solid #000;
+  padding: 20px;
+  text-align: center;
+}
+.parent-z-index div:nth-child(1) {
+  background-color: red;
+  grid-area: 1 / 1 / 1 / span 2;
+}
+.parent-z-index div:nth-child(2) {
+  background-color: yellowgreen;
+  grid-area: 1 / 2 / span 2 / span 1;
+  z-index: 1;
+}
+.parent-z-index div:nth-child(3) {
+  background-color: dodgerblue;
+  grid-area: 2 / 2 / span 1 / span 2;
+}
+
+.parent-row-order {
+  border: 5px solid #000;
+  display: grid;
+}
+.parent-row-order div {
+  border: 1px solid red;
+  font-size: 30px;
+  text-align: center;
+}
+.focus-row1 {
+  background-color: crimson;
+  grid-row: 2;
+}
+.focus-row2 {
+  background-color: yellowgreen;
+  grid-row: 4;
+}
+
+.parent-order {
+  border: 5px solid #000;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 10px;
+}
+.parent-order div {
+  padding: 15px;
+  text-align: center;
+  font-size: 30px;
+  border: 1px solid #000;
+  background-color: skyblue;
+}
+.parent-order div:nth-child(1) {
+  order: 6;
+}
+.parent-order div:nth-child(2) {
+  order: 5;
+}
+.parent-order div:nth-child(3) {
+  order: 4;
+}
+.parent-order div:nth-child(4) {
+  order: 3;
+}
+.parent-order div:nth-child(5) {
+  order: 2;
+}
+.parent-order div:nth-child(6) {
+  order: 1;
+}
