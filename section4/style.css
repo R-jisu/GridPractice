@@ -62,3 +62,18 @@ a {
     grid-template-columns: min-content 1fr;
   }
 }
+
+.parent4 {
+  border: 5px solid #000;
+  background-color: skyblue;
+  display: grid;
+  /* grid-template-columns: repeat(4, minmax(200px, 1fr)); */
+  grid-template-columns: repeat(4, minmax(min-content, 500px));
+}
+.parent4 div {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;  
+}
