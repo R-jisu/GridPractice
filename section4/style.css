@@ -1,0 +1,29 @@
+body {
+  color: #222;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #222;
+}
+
+/* Grid practice */
+.parent1 {
+  border: 5px solid #000;
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+}
+
+.parent1 div {
+  background-color: yellowgreen;
+  border: 1px solid white;
+  text-align: center;
+  font-size: 20px;
+  color: #fff;
+  padding: 15px;
+}
+
+.parent1 div:nth-child(6) {
+  grid-column: 1 / span 5;
+}
