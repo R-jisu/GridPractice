@@ -27,3 +27,17 @@ a {
 .parent1 div:nth-child(6) {
   grid-column: 1 / span 5;
 }
+
+.parent2 {
+  border: 5px solid #000;
+  background-color: skyblue;
+  display: grid;
+  grid-template-columns: 1fr minmax(400px, auto) 1fr;
+}
+.parent2 div {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+}
