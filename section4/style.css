@@ -41,3 +41,24 @@ a {
   margin: 10px;
   text-align: center;
 }
+
+.parent3 {
+  border: 5px solid #000;
+  background-color: skyblue;
+  display: grid;
+  grid-template-columns: min-content 1fr min-content 1fr;
+}
+
+.parent3 div {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;  
+}
+
+@media (max-width: 768px) {
+  .parent3 {
+    grid-template-columns: min-content 1fr;
+  }
+}
