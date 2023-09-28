@@ -25,7 +25,7 @@ body {
 }
 .welcome {
   grid-area: welcome;
-  background: url(./20230331000538_0.jpeg) no-repeat center center;
+  background: url(./images/20230331000538_0.jpeg) no-repeat center center;
   background-size: cover;
 }
 .banner {
