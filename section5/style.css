@@ -17,9 +17,11 @@ body {
 .header {
   grid-column: 1 / span 3;
 }
-.menu {}
+.menu {
+  grid-row: 2 / span 2;
+}
 .main {}
 .aside {}
 .footer {
-  grid-column: 1 / span 3;
+  grid-column: 2 / span 2;
 }
